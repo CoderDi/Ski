@@ -1,0 +1,30 @@
+@import "normalize";
+/* Custom */
+@import "partials/fonts";
+
+* {
+  font-family: "Museo Sans Cyrl";
+  font-weight: 100;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+
+@import "partials/header";
+
+@import "partials/front";
+
+@import "partials/gallery";
+
+@import "partials/hotel";
+
+@import "partials/akcii";
+
+@import "partials/booking";
+
+@import "partials/rooms";
+
+@import "partials/footer";
+
+@import "partials/media";
