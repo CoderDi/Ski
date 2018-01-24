@@ -3,9 +3,8 @@
 @import "partials/fonts";
 
 * {
-  font-family: "Museo Sans Cyrl";
-  font-weight: 100;
-  font-size: 16px;
+  font-family: "A Avante Bs";
+  font-size: 14px;
 }
 a {
   text-decoration: none;
@@ -14,16 +13,6 @@ a {
 @import "partials/header";
 
 @import "partials/front";
-
-@import "partials/gallery";
-
-@import "partials/hotel";
-
-@import "partials/akcii";
-
-@import "partials/booking";
-
-@import "partials/rooms";
 
 @import "partials/footer";
 

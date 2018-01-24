@@ -1,48 +1,70 @@
 /*footer*/
 .footer {
   position: relative;
-  background: url(../img/footer-bg.jpg) no-repeat center;
-  background-size: cover;
 
-  &::before {
+  &__img {
+    width: 100%;
+  }
+
+  &__content {
     position: absolute;
-    content: '';
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #0c0c0c;
-    opacity: 0.8;
   }
-
   &__wrapper {
-    position: relative;
-    max-width: 1310px;
+    height: 100%;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 80px 15px 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  &__flex {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  &__block {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
   }
-
-  &__menu {
-    position: absolute;
-    top: 0;
-    left: 0;
+  &__copyright {
     width: 100%;
-    border-bottom: 1px solid #fff;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+  &__socials {
 
     &_item {
+      display: block;
       color: #ffffff;
-      font-family: "Museo Sans Cyrl";
-      font-size: 16px;
-      font-weight: 300;
+      font-family: "A Avante Bs";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 36px;
       text-transform: uppercase;
-      padding: 0 17px;
+      padding-left: 42px;
+      background-repeat: no-repeat;
+      background-position: center left;
+      margin-bottom: 25px;
+
+      &--vk {
+        background-image: url(../img/vk.png);
+      }
+      &--fb {
+        background-image: url(../img/fb.png);
+      }
+      &--ig {
+        background-image: url(../img/ig.png);
+      }
 
       &:hover {
         text-decoration: underline;
@@ -50,130 +72,86 @@
     }
   }
 
-  &__btn {
-    width: 187px;
-    height: 44px;
-    border: 1px solid #ffffff;
-    box-sizing: border-box;
+  &__span1 {
     color: #ffffff;
-    font-family: "Museo Sans Cyrl";
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 42px;
-    text-align: center;
-    flex-shrink: 0;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: all .2s;
-
-    &:hover {
-      background: #fff;
-      color: #333;
-    }
+    font-family: "A Avante Bs";
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
   }
-  &__pay {
-    margin: 0 5px;
-  }
-
-  &__weblitex {
-    color: #ffffff;
-    font-family: "Museo Sans Cyrl";
-    font-size: 16px;
-    font-weight: 100;
+  &__contacts {
+    padding-bottom: 40px;
 
     & span {
+      display: block;
+    }
+  }
+  &__span {
+
+    &--name {
+      color: #ffffff;
+      text-transform: uppercase;
+      font-family: "A Avante Bs Extra Bold";
+      font-size: 24px;
       font-weight: 700;
-      letter-spacing: 2px;
+      line-height: 24px;
+    }
+    &--phone {
       display: block;
-    }
-    & img {
-      float: left;
-      margin-right: 13px;
-    }
+      color: #ffffff;
+      font-family: "A Avante Bs Extra Bold";
+      font-size: 34px;
+      font-weight: 400;
+      line-height: 34px;
+      text-transform: uppercase;
+      margin: 10px 0 15px;
 
-    &:hover span {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &--mail, &--mail a {
+      color: #ffffff;
+      font-family: "A Avante Bs";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 18px;
+      text-transform: uppercase;
+    }
+    &--mail a:hover {
       text-decoration: underline;
     }
-  }
 
-  &__logo {
-    margin-right: 25px;
-    float: left;
+    &--info {
+      color: #ffffff;
+      font-family: "A Avante Bs";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+      text-transform: uppercase;
 
-    &_flex {
-      display: flex;
+      & a {
+        color: #ffffff;
+        font-family: "A Avante Bs";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        text-transform: uppercase;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 
-  &__text {
+  &__span2 {
     color: #ffffff;
-    font-family: "Museo Sans Cyrl";
-    font-size: 14px;
-    font-weight: 100;
-
-    & a {
-      display: block;
-      padding-top: 10px;
-      color: #848484;
-      font-family: "Museo Sans Cyrl";
-      font-size: 14px;
-      font-weight: 100;
-      line-height: 16px;
-      text-decoration: underline;
-    }
+    font-family: "A Avante Bs Extra Bold";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 15px 0;
   }
 }
-
-.to-top {
-  width: 60px;
-  height: 54px;
-  position: fixed;
-  bottom: 180px;
-  right: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  box-sizing: border-box;
-  padding-top: 30px;
-  font-size: 13px;
-  font-weight: 300;
-  cursor: pointer;
-  transition: .2s;
-  display: none;
-
-  &:hover {
-    font-weight: 700;
-    padding-top: 35px;
-
-    &::before {
-      top: -5px;
-    }
-  }
-
-  &::before {
-    position: absolute;
-    z-index: 20;
-    top: 0;
-    left: 0;
-    content: '';
-    width: 50px;
-    height: 50px;
-    border-top: 4px solid #000;
-    border-right: 4px solid #000;
-    border-radius: 3px;
-    transform: rotate(-45deg);
-    transition: .2s;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
