@@ -8,6 +8,15 @@ $(document).ready(function() {
     $(this).parents(".history").find(".history__text p").addClass("history--open");
     $(this).hide();
   });
+
+  $(".submenu__open").click(function(){
+    $(this).parents(".header__menu_link").find(".header__submenu").toggleClass("header__submenu--open");
+    $(this).toggleClass("submenu__open--active");
+  });
+
+  $(".butter").click(function(){
+    $(".header__menu").toggleClass("header__menu--open");
+  });
 });
 
 
