@@ -1,9 +1,149 @@
 .header {
 
   &__img {
-    & img {
+    overflow: hidden;
+
+    &_bg {
+      display: block;
       width: 100%;
     }
+
+    &--container {
+      position: relative;
+    }
+  }
+
+  & .dots {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+    div {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+
+      &#dot1 {
+        top: 83.156%;
+        right: 48.45%;
+      }
+      &#dot2 {
+        top: 75.532%;
+        right: 45.95%;
+      }
+      &#dot3 {
+        top: 70.213%;
+        right: 42.55%;
+      }
+      &#dot4 {
+        top: 67.73%;
+        right: 38.85%;
+      }
+      &#dot5 {
+        top: 67.73%;
+        right: 32.45%;
+      }
+      &#dot6 {
+        top: 75.71%;
+        right: 17%;
+      }
+      &#dot7 {
+        top: 75.71%;
+        right: 11.1%;
+      }
+      &#dot8 {
+        top: 71.631%;
+        right: 5.2%;
+      }
+
+      &#dot9 {
+        top: 88.652%;
+        left: 20.5%;
+      }
+      &#dot10 {
+        top: 72.163%;
+        left: 17.35%;
+      }
+      &#dot11 {
+        top: 60.638%;
+        left: 13.5%;
+      }
+      &#dot12 {
+        top: 53.723%;
+        left: 9.15%;
+      }
+      &#dot13 {
+        top: 51.064%;
+        left: 4.6%;
+      }
+
+      &#dot14 {
+        top: 41.312%;
+        left: 2.1%;
+      }
+      &#dot15 {
+        top: 35.461%;
+        left: 7.15%;
+      }
+      &#dot16 {
+        top: 32.27%;
+        left: 12.5%;
+      }
+      &#dot17 {
+        top: 31.915%;
+        left: 18.65%;
+      }
+      &#dot18 {
+        top: 34.752%;
+        left: 24.3%;
+      }
+      &#dot19 {
+        top: 40.78%;
+        left: 29.6%;
+      }
+      &#dot20 {
+        top: 50.177%;
+        left: 35.4%;
+      }
+
+      &#dot21 {
+        top: 33.108%;
+        right: 1.2%;
+      }
+      &#dot22 {
+        top: 31.03%;
+        right: 4.35%;
+      }
+      &#dot23 {
+        top: 30.651%;
+        right: 8.35%;
+      }
+      &#dot24 {
+        top: 31.738%;
+        right: 13.05%;
+      }
+      &#dot25 {
+        top: 36.525%;
+        right: 18.25%;
+      }
+      &#dot26 {
+        top: 45.567%;
+        right: 23.65%;
+      }
+      &#dot27 {
+        top: 59.22%;
+        right: 28.9%;
+      }
+    }
+    
+  }
+
+  & .man {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   &-top {
@@ -51,7 +191,7 @@
       }
 
       & > a {
-        color: #000000;
+        color: #4a88b1;
         font-family: "A Avante Bs";
         font-size: 16px;
         font-weight: 400;
@@ -61,6 +201,9 @@
         padding: 1px 6px 0;
         background: transparent;
         // transition: .1s ease-in-out;
+        &:hover {
+          color: #ffffff;
+        }
 
         &.info-link:hover {
           background: #78cae7;
@@ -76,6 +219,7 @@
   }
   &__submenu {
     position: absolute;
+    z-index: 99;
     top: 100%;
     margin-top: 20px;
     opacity: 0;
@@ -105,7 +249,7 @@
     &_item {
       display: block;
       margin-bottom: 6px;
-      color: #ffffff;
+      color: #4a88b1;
       font-size: 14px;
       font-weight: 400;
       height: 22px;
@@ -113,9 +257,20 @@
       text-transform: uppercase;
       letter-spacing: -.6px;
       padding: 0 3px;
+      background: none !important;
+
+      &:hover.blue-link {
+        background: #78cae7 !important;
+      }
+      &:hover.bir-link {
+        background: #45d0ce !important;
+      }
+      &:hover.or-link {
+        background: #ff6a66 !important;
+      }
 
       &:hover {
-        color: #284360;
+        color: #ffffff;
       }
     }
   }

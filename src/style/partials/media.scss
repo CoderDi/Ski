@@ -4,7 +4,7 @@
 
 
 @media screen and (max-width: 1100px) {
-  .header__img img {
+  .header__img_bg {
     min-width: 1100px;
   }
   .header__img {
@@ -64,6 +64,7 @@
 
   .header__menu {
     position: absolute;
+    z-index: 99;
     top: 70px;
     width: 280px;
     right: 0px;
