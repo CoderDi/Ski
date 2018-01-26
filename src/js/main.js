@@ -1,5 +1,45 @@
-$(document).ready(function() {
-  $(".js-manage__read-more").click(function(){
+$("#man1").css("opacity",0);
+$("#man2").css("opacity",0);
+$("#man3").css("opacity",0);
+$("#man4").css("opacity",0);
+window.onload = function() {
+    var t,l,t2,l2,t3,l3,t4,l4;
+    setTimeout(function() {
+        anim();
+    },10);
+    
+     t = $("#dot1").css("top");
+      l = $("#dot1").css("left");
+      document.getElementById("man1").style.height = $("#man1").height()*($("#header-img").width()/2000) + "px";
+      $("#man1").animate({rotate: "-45deg"}, 0);
+      document.getElementById("man1").style.top = parseFloat(t) - ($("#man1").height()*0.6377) + "px";
+      document.getElementById("man1").style.left = parseFloat(l) - $("#man1").width() + "px";
+  
+      t2 = $("#dot9").css("top");
+      l2 = $("#dot9").css("left");
+      document.getElementById("man2").style.height = $("#man2").height()*($("#header-img").width()/2000) + "px";
+      $("#man2").animate({rotate: "15deg"}, 0);
+      document.getElementById("man2").style.top = parseFloat(t2) - ($("#man2").height()*0.1377) + "px";
+      document.getElementById("man2").style.left = parseFloat(l2) - ($("#man2").width()*0.1) + "px";
+      
+      
+      t3 = $("#dot14").css("top");
+      l3 = $("#dot14").css("left");
+      document.getElementById("man3").style.height = $("#man3").height()*($("#header-img").width()/2000) + "px";
+      $("#man3").animate({rotate: "-50deg"}, 0);
+      document.getElementById("man3").style.top = parseFloat(t3) - ($("#man3").height()*0.60) + "px";
+      document.getElementById("man3").style.left = parseFloat(l3) - $("#man3").width() + "px";
+      
+      t4 = $("#dot21").css("top");
+      l4 = $("#dot21").css("left");
+      document.getElementById("man4").style.height = $("#man4").height()*($("#header-img").width()/2000) + "px";
+      $("#man4").animate({rotate: "15deg"}, 0);
+      document.getElementById("man4").style.top = parseFloat(t4) - ($("#man4").height()*0.99) + "px";
+      document.getElementById("man4").style.left = parseFloat(l4) - $("#man4").width()*0.4 + "px";
+  
+    
+    
+    $(".js-manage__read-more").click(function(){
     $(this).parents(".manage__content").find(".manage__text").addClass("manage__text--open");
     $(this).hide();
   });
@@ -17,15 +57,16 @@ $(document).ready(function() {
   $(".butter").click(function(){
     $(".header__menu").toggleClass("header__menu--open");
   });
+   
 
+};
 
-  var t,l,t2,l2,t3,l3,t4,l4;
-  t = $("#dot1").css("top");
-  l = $("#dot1").css("left");
-  document.getElementById("man1").style.height = $("#man1").height()*($("#header-img").width()/2000) + "px";
-  $("#man1").animate({rotate: "-45deg"}, 0);
-  document.getElementById("man1").style.top = parseFloat(t) - ($("#man1").height()*0.6377) + "px";
-  document.getElementById("man1").style.left = parseFloat(l) - $("#man1").width() + "px";
+function anim() {
+    $("#man1").css("opacity",1);
+$("#man2").css("opacity",1);
+$("#man3").css("opacity",1);
+$("#man4").css("opacity",1);
+  
   t = $("#dot2").css("top");
   l = $("#dot2").css("left");
   $("#man1").animate({left: parseFloat(l) - $("#man1").width(), top: parseFloat(t) - ($("#man1").height()*0.6977), rotate: "-35deg"}, 300,"linear");
@@ -51,12 +92,6 @@ $(document).ready(function() {
 
 
 
-  t2 = $("#dot9").css("top");
-  l2 = $("#dot9").css("left");
-  document.getElementById("man2").style.height = $("#man2").height()*($("#header-img").width()/2000) + "px";
-  $("#man2").animate({rotate: "15deg"}, 0);
-  document.getElementById("man2").style.top = parseFloat(t2) - ($("#man2").height()*0.1377) + "px";
-  document.getElementById("man2").style.left = parseFloat(l2) - ($("#man2").width()*0.1) + "px";
   t2 = $("#dot10").css("top");
   l2 = $("#dot10").css("left");
   $("#man2").animate({left: parseFloat(l2) - ($("#man2").width()*0.1), top: parseFloat(t2) - ($("#man2").height()*0.1977), rotate: "5deg"}, 400,"linear");
@@ -74,12 +109,6 @@ $(document).ready(function() {
   $("#man2").animate({left: parseFloat(l2) - ($("#man2").width()*0.1), top: parseFloat(t2) - ($("#man2").height()*0.4477), rotate: "-113deg"}, 1000,"linear");
   
 
-  t3 = $("#dot14").css("top");
-  l3 = $("#dot14").css("left");
-  document.getElementById("man3").style.height = $("#man3").height()*($("#header-img").width()/2000) + "px";
-  $("#man3").animate({rotate: "-50deg"}, 0);
-  document.getElementById("man3").style.top = parseFloat(t3) - ($("#man3").height()*0.60) + "px";
-  document.getElementById("man3").style.left = parseFloat(l3) - $("#man3").width() + "px";
   t3 = $("#dot15").css("top");
   l3 = $("#dot15").css("left");
   $("#man3").animate({left: parseFloat(l3) - $("#man3").width(), top: parseFloat(t3) - ($("#man3").height()*0.64), rotate: "-45deg"}, 300,"linear");
@@ -100,12 +129,6 @@ $(document).ready(function() {
   $("#man3").animate({left: parseFloat(l3) - $("#man3").width(), top: parseFloat(t3) - ($("#man3").height()*1.1), rotate: "-5deg"}, 400,"linear");
   
 
-  t4 = $("#dot21").css("top");
-  l4 = $("#dot21").css("left");
-  document.getElementById("man4").style.height = $("#man4").height()*($("#header-img").width()/2000) + "px";
-  $("#man4").animate({rotate: "15deg"}, 0);
-  document.getElementById("man4").style.top = parseFloat(t4) - ($("#man4").height()*0.99) + "px";
-  document.getElementById("man4").style.left = parseFloat(l4) - $("#man4").width()*0.4 + "px";
   t4 = $("#dot22").css("top");
   l4 = $("#dot22").css("left");
   $("#man4").animate({left: parseFloat(l4) - $("#man4").width()*0.4, top: parseFloat(t4) - ($("#man4").height()*0.99), rotate: "15deg"}, 300,"linear");
@@ -125,7 +148,4 @@ $(document).ready(function() {
   l4 = $("#dot27").css("left");
   $("#man4").animate({left: parseFloat(l4) - $("#man4").width()*0.4, top: parseFloat(t4) - ($("#man4").height()*0.99), rotate: "0deg"}, 300,"linear");
   
-
-});
-
-
+}
